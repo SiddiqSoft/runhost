@@ -140,10 +140,10 @@ int main(int argc, char** argv)
 	SetConsoleCtrlHandler(OnConsoleHandler, TRUE);
 
 #ifdef _DEBUG
-	cout << "argc: " << argc << endl;
+	std::cout << "argc: " << argc << std::endl;
 	for (int i = 0; i < argc; i++)
 	{
-		cout << "[" << i << "] - " << argv[i] << endl;
+		std::cout << "[" << i << "] - " << argv[i] << std::endl;
 	}
 #endif
 
@@ -153,7 +153,7 @@ int main(int argc, char** argv)
 		// It should be provided as "name of service" in quotes in case you have space in the name.
 		std::cout << "Attempting to start `" << argv[1] << "`..";
 		ServiceControlStart(argv[1]);
-		std::cout << endl;
+		std::cout << std::endl;
 	}
 
 	char x{};
@@ -164,7 +164,7 @@ int main(int argc, char** argv)
 		x = getchar();
 	} while (x != 'q');
 
-	std::cout << endl
+	std::cout << std::endl
 		<< "Bye, bye." << std::endl;
 
 	return 0;
