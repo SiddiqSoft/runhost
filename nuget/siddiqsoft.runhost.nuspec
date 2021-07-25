@@ -34,7 +34,7 @@
   <files>
     <!-- includes all files necessary to run the service -->
     <file src="..\output\x64\Release\runhost.exe" target="content\runhost\x64\" />
-    <file src="..\output\x86\Release\runhost.exe" target="content\runhost\x86\" />
+    <file src="..\output\Win32\Release\runhost.exe" target="content\runhost\Win32\" />
     <file src="..\README.md" target="docs\" />
     <file src="..\LICENSE" target="docs\" />
     <file src="Siddiq-Software-Avatar.png" target="docs\" />

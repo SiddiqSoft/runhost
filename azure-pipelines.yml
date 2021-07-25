@@ -50,10 +50,10 @@ steps:
   displayName: 'Build solution runhost.sln Win32 RELEASE'
   inputs:
     solution: 'runhost.sln'
-    platform: 'x86'
+    platform: 'Win32'
     configuration: 'Release'
     maximumCpuCount: true
-    msbuildArchitecture: 'x86'
+    msbuildArchitecture: 'Win32'
 
 - task: VSBuild@1
   displayName: 'Build solution runhost.sln x64 RELEASE'
